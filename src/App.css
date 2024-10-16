@@ -1,0 +1,146 @@
+html {
+  font-size: 14px;
+}
+p {
+  font-size: 14px;
+}
+.container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.leftPane {
+  width: 25%;
+  background-color: #042e3a;
+}
+
+.rightPane {
+  width: 75%;
+  background-color: #ffff;
+  padding: 20px;
+}
+
+.topSection {
+  height: 10%;
+  background-color: #042e3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.middleSection {
+  height: 67%;               /* Takes up 70% of the height of left pane */
+  background-color: #042e3a;  /* Light blue background */
+  display: flex;
+  padding-left: 20px;
+  color: white;
+}
+
+.iconList {
+  list-style-type: none;  /* Remove default bullet points */
+  padding: 0;             /* Remove default padding */
+  text-align: left;        /* Align text to the left */
+}
+
+.iconList li {
+  font-size: 18px;        /* Make the list items a bit bigger */
+  display: flex;          /* Align icon and text horizontally */
+  align-items: center;    /* Align icon and text vertically */
+  margin-bottom: 5px;    /* Add some space between items */
+}
+
+.iconList li svg {
+  margin-right: 10px;     /* Space between icon and text */
+}
+
+.iconList .listItem {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 55px;
+  border: 2px solid transparent; /* No box by default */
+  transition: all 0.3s ease;
+}
+
+.iconList .listItem:hover {
+  border: 1px solid #06576c; /* Blue box on hover */
+  border-radius: 6px;
+  background-color: #06576c;
+  cursor: pointer;
+}
+
+.iconList .listItem.active {
+  border: 1px solid #06576c; /* Same blue box for active item */
+  border-radius: 6px;
+  background-color: #06576c; /* Optional: light background for active item */
+}
+.hamburger {
+  display: none;
+}
+.logo {
+  height: 30px;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  justify-content: space-between;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftPane {
+    width: 100%;
+  }
+
+  .rightPane {
+    width: 100%;
+  }
+
+  .middleSection {
+    display: none;
+  }
+
+  .middleSection.show {
+    display: flex;
+    margin-left: 70px;
+  }
+  .iconList li {
+    justify-content: center;
+  }
+
+  .iconList .listItem:hover {
+    /* Remove all hover effects */
+    border: none; /* Remove border on hover */
+    background-color: transparent; /* Remove background color on hover */
+    cursor: default; /* Change cursor back to default */
+  }
+  /* Hamburger styles */
+.hamburger {
+  font-size: 24px;
+  color: white;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+.topSection {
+  padding-top: 20px;
+}
+
+}
+
+
+
+
