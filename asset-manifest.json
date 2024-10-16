@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LuxLedger/static/css/main.20892079.css",
+    "main.js": "/LuxLedger/static/js/main.a7170d72.js",
+    "static/js/453.f3b4dd83.chunk.js": "/LuxLedger/static/js/453.f3b4dd83.chunk.js",
+    "index.html": "/LuxLedger/index.html",
+    "static/media/logo.svg": "/LuxLedger/static/media/logo.f832fbad8d4442355ae881829a31695a.svg",
+    "main.20892079.css.map": "/LuxLedger/static/css/main.20892079.css.map",
+    "main.a7170d72.js.map": "/LuxLedger/static/js/main.a7170d72.js.map",
+    "453.f3b4dd83.chunk.js.map": "/LuxLedger/static/js/453.f3b4dd83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20892079.css",
+    "static/js/main.a7170d72.js"
+  ]
+}
